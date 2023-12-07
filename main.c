@@ -2,8 +2,10 @@
 #include "src/debugmalloc.h"
 #include "src/map.h"
 #include "src/movement.h"
+#include <windows.h>
 
 int main() {
+    SetConsoleOutputCP(65001);
     char** map = initMap();
     printMap(map);
     MovData movementData = Empty;
